@@ -1,0 +1,260 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.phan1 {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1000;
+    background-color: white;
+
+}
+.phancon {
+    top: 80px;
+    position: absolute;
+}
+
+.mau1 {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px 0;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: black;
+    letter-spacing: 4px;
+
+}
+li {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.menu li:hover {
+    background-color: rgba(147, 144, 144, 0.684);
+}
+
+.anh {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+.anh img{
+    width: 100%;
+}
+
+.anhcon {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: 40%;
+    letter-spacing: 4px;
+}
+
+.chu {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(42, 41, 41, 0.658);
+    text-align: center;
+    line-height: 60px;
+}
+.chu2 {
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.conten {
+    padding: 20px 20px;
+    position: relative;
+}
+p {
+    padding: 20px 0px;
+}
+
+.noidung {
+    display: flex;
+    width: 23%;
+    height: 230px;
+    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+    float: left;
+    margin: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.boc {
+    width: 100%;
+    position: absolute;
+    margin-top: 30px;
+    
+}
+.con {
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+.about {
+    margin-top: 500px;
+    padding: 0px 30px;
+}
+
+.chandung {
+    float: left;
+    width: 345px;
+    margin: 0px 8px;
+}
+h4 {
+    margin-top: 30px;
+}
+.chandung img {
+    width: 100%;
+}
+.chandung .contact {
+    width: 100%;
+}
+button {
+    width: 100%;
+    border: 0px;
+    padding: 10px 0;
+    font: inherit;
+}
+.chandung button:hover {
+    background-color: #dedede;
+}
+.contact {
+    margin: 0 30px;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    font: inherit;
+}
+.button-con {
+    width: 300px;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.phan2 {
+    margin: 60px 30px;
+}
+
+.footer-child {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin: -50px;
+    font: inherit;
+}
+.footer-child a {
+    color: white;
+}
+
+/* mobile */
+@media only screen and  (max-width: 480px) {
+    .mau1#heard2 {
+        display: none;
+    }
+
+    .chu2 {
+        display: none;
+    }
+
+    .anhcon {
+        top: 30%;
+    }
+    .boc {
+        display: flex;
+        flex-direction: column;
+    }
+    .noidung {
+        width: 80%;
+    }  
+    .about {
+margin-top: 2000px;
+        width: 95%;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .button-con {
+        width: 50%;
+    }
+    .phan2 {
+        width: 80%;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .chu2 {
+        display: none;
+    }
+
+    .anhcon {
+        top: 30%;
+    }
+    .noidung {
+        width: 45%;
+    }  
+    .chandung {
+        width: 45%;
+    }
+    .about {
+        padding-top: 500px;
+    }
+    .chandung img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .chu2 {
+        display: none;
+    }
+
+    .anhcon {
+        top: 30%;
+    }
+    .noidung {
+        width: 22%;
+    }  
+    .chandung {
+        width: 23%;
+    }
+    .chandung img {
+        width: 100%;
+    }
+}
